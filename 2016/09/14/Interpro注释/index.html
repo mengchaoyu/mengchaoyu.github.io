@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="注释,Interpro," />
 
 
 
@@ -84,12 +84,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta name="description" content="最近有一个基因组需要Interproscan注释，找了一些资料，网页版的一次只能注释一条序列，不能满足要求，而本地版的需要安装，安装包又有4个多G，看到推荐说除非超算线程数多，不然也不推荐安装本地版，还有一种则是用interproscan提供的REST来进行注释，但是REST有一个缺陷，只能注释蛋白序列，而不能注释核酸序列。本地版功能更为强大，蛋白序列和核酸序列均能注释。我的是蛋白序列，所以就选择">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Interpro注释">
+<meta property="og:url" content="http://yoursite.com/2016/09/14/Interpro注释/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="最近有一个基因组需要Interproscan注释，找了一些资料，网页版的一次只能注释一条序列，不能满足要求，而本地版的需要安装，安装包又有4个多G，看到推荐说除非超算线程数多，不然也不推荐安装本地版，还有一种则是用interproscan提供的REST来进行注释，但是REST有一个缺陷，只能注释蛋白序列，而不能注释核酸序列。本地版功能更为强大，蛋白序列和核酸序列均能注释。我的是蛋白序列，所以就选择">
+<meta property="og:updated_time" content="2016-09-14T10:33:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Interpro注释">
+<meta name="twitter:description" content="最近有一个基因组需要Interproscan注释，找了一些资料，网页版的一次只能注释一条序列，不能满足要求，而本地版的需要安装，安装包又有4个多G，看到推荐说除非超算线程数多，不然也不推荐安装本地版，还有一种则是用interproscan提供的REST来进行注释，但是REST有一个缺陷，只能注释蛋白序列，而不能注释核酸序列。本地版功能更为强大，蛋白序列和核酸序列均能注释。我的是蛋白序列，所以就选择">
 
 
 
@@ -110,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/14/Interpro注释/"/>
 
-  <title> Archiv | Hexo </title>
+  <title> Interpro注释 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -133,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -241,66 +245,146 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Öhm..! Insgesamt 3 Artikel. Bleib dran.
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Interpro注释
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-09-14T16:41:54+08:00" content="2016-09-14">
+              2016-09-14
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/09/14/Interpro注释/" class="leancloud_visitors" data-flag-title="Interpro注释">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <p>最近有一个基因组需要Interproscan注释，找了一些资料，网页版的一次只能注释一条序列，不能满足要求，而本地版的需要安装，安装包又有4个多G，看到推荐说除非超算线程数多，不然也不推荐安装本地版，还有一种则是用interproscan提供的REST来进行注释，但是REST有一个缺陷，只能注释蛋白序列，而不能注释核酸序列。本地版功能更为强大，蛋白序列和核酸序列均能注释。我的是蛋白序列，所以就选择用REST了。</p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>我习惯使用python2,所以选择python的脚本下载。脚本下载地址为：<a href="http://www.ebi.ac.uk/Tools/webservices/services/pfa/iprscan5_rest" target="_blank" rel="external">iprscan5_urllib2.py</a></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>下载完毕后就是安装了，网页说明的是需要3个依赖包：urllib,urllib2和xmltramp。前两个包没有问题，超算中已经安装了，但是第三个包安装许久都没有安装上，帮助中给的链接为：<a href="http://www.aaronsw.com/2002/xmltramp/" target="_blank" rel="external">http://www.aaronsw.com/2002/xmltramp/</a>，需要下载脚本 xmltramp.py。下载后安装命令为: </p>
+<a id="more"></a>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">easy_install xmltramp</div><div class="line">&lt;or&gt;</div><div class="line">yum install python-xmltramp</div></pre></td></tr></table></figure>
+<p>但是我两种都没有安装成功，各种百度谷歌无解。最后我想用python3算了，于是安装了xmltramp2,命令为：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install xmltramp2 --user</div></pre></td></tr></table></figure></p>
+<p>安装成功，还是python2环境，想着运行下试一试，结果运行成功并没有报错。试着删除iprscan5_urllib2.py同目录下的xmltramp.py，结果不能运行。<br><strong> 于是得到结论，在python2下，只需要安装xmltramp2，同时将xmltramp.py和xmltramp.py放在同一目录下，即可。 </strong></p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>根据自己的需要可以决定是否需要go注释和pathway注释，我的命令如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python iprscan5_urllib2.py --crc --goterms --pathways --email=email@email.com --quiet --outfile output --sequence=input.fa</div></pre></td></tr></table></figure></p>
+<p>结果会生成8个文件，我们所需要的主要信息就在output.tsv.txt中了。</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>interproscan推荐同时最多提交30个请求，但是如果我们有很多序列需要注释该怎么办？我自己写了一个python脚本，只要将这个脚本和上面的脚本放在同一路径中就可以实现多线程同时下载了。脚本如下：<br>PS. 不是计算机专业的，脚本写的烂，只希望实现功能用。</p>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/注释/" rel="tag">#注释</a>
+          
+            <a href="/tags/Interpro/" rel="tag">#Interpro</a>
+          
         </div>
       
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/09/Hexo-搭建-Github-博客/" rel="next" title="Hexo 搭建 Github 博客">
+                <i class="fa fa-chevron-left"></i> Hexo 搭建 Github 博客
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/18/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/18/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-18T16:53:00+08:00"
-              content="2017-01-18" >
-          01-18
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -308,6 +392,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -327,8 +415,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -371,6 +468,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意"><span class="nav-number">4.</span> <span class="nav-text">注意</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -474,11 +582,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
