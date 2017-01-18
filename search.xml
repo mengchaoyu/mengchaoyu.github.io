@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[Interpro注释]]></title>
+      <url>%2F2016%2F09%2F14%2FInterpro%E6%B3%A8%E9%87%8A%2F</url>
+      <content type="text"><![CDATA[最近有一个基因组需要Interproscan注释，找了一些资料，网页版的一次只能注释一条序列，不能满足要求，而本地版的需要安装，安装包又有4个多G，看到推荐说除非超算线程数多，不然也不推荐安装本地版，还有一种则是用interproscan提供的REST来进行注释，但是REST有一个缺陷，只能注释蛋白序列，而不能注释核酸序列。本地版功能更为强大，蛋白序列和核酸序列均能注释。我的是蛋白序列，所以就选择用REST了。 下载我习惯使用python2,所以选择python的脚本下载。脚本下载地址为：iprscan5_urllib2.py 安装下载完毕后就是安装了，网页说明的是需要3个依赖包：urllib,urllib2和xmltramp。前两个包没有问题，超算中已经安装了，但是第三个包安装许久都没有安装上，帮助中给的链接为：http://www.aaronsw.com/2002/xmltramp/，需要下载脚本 xmltramp.py。下载后安装命令为: 123easy_install xmltramp&lt;or&gt;yum install python-xmltramp 但是我两种都没有安装成功，各种百度谷歌无解。最后我想用python3算了，于是安装了xmltramp2,命令为：1pip install xmltramp2 --user 安装成功，还是python2环境，想着运行下试一试，结果运行成功并没有报错。试着删除iprscan5_urllib2.py同目录下的xmltramp.py，结果不能运行。 于是得到结论，在python2下，只需要安装xmltramp2，同时将xmltramp.py和xmltramp.py放在同一目录下，即可。 使用根据自己的需要可以决定是否需要go注释和pathway注释，我的命令如下：1python iprscan5_urllib2.py --crc --goterms --pathways --email=email@email.com --quiet --outfile output --sequence=input.fa 结果会生成8个文件，我们所需要的主要信息就在output.tsv.txt中了。 注意interproscan推荐同时最多提交30个请求，但是如果我们有很多序列需要注释该怎么办？我自己写了一个python脚本，只要将这个脚本和上面的脚本放在同一路径中就可以实现多线程同时下载了。脚本如下：PS. 不是计算机专业的，脚本写的烂，只希望实现功能用。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hexo 搭建 Github 博客]]></title>
+      <url>%2F2016%2F09%2F09%2FHexo-%E6%90%AD%E5%BB%BA-Github-%E5%8D%9A%E5%AE%A2%2F</url>
+      <content type="text"><![CDATA[建个人博客的中间过程真是艰辛，方便以后回忆，现记录过程： 注册 github， 创建页面仓库。 安装软件: Node.js git 生成SSH Key: 123$ ssh-keygen -t rsa -C "邮件地址@youremail.com" Generating public/private rsa key pair. Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt; 然后输入密码： 12Enter passphrase (empty for no passphrase):&lt;输入加密串&gt;Enter same passphrase again:&lt;再次输入加密串&gt; 添加SSH Key到Github：打开C:/Users/your_user_directory/.ssh/id_rsa.pub，复制内容，粘贴到Github –&gt; Settings –&gt; SSH and GPG keys –&gt; New SSH key –&gt; ok 测试： 1ssh -T git@github.com 返回： 123The authenticity of host 'github.com (207.97.227.239)' can't be established.RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.Are you sure you want to continue connecting (yes/no)? 输入 “yes”, 返回： 1Hi username! You've successfully authenticated, but GitHub does not provide shell access. 主题配置： 安装Hexo：打开命令行工具：1npm install -g hexo 部署Hexo： 在电脑D盘中新建一个文件夹“Git_blog”，用命令行进入这个文件夹，输入： 1234hexo initnpm installhexo ghexo s 浏览器可以进入 localhost:4000 查看本地网页。 将本地文件部署到Github： 修改Git_blog中的_config.yml文件 ![](http://od8k817b0.bkt.clouddn.com/bushu.png) 将其deploy到仓库中：打开命令行：1234npm install hexo-deployer-git --savehexo cleanhexo ghexo d 安装主题: 在hexo中选择合适的主题。以NexT为例， 在Git_blog目录下，命令行输入： 1git clone https://github.com/iissnan/hexo-theme-next.git themes/next 启用主题： 修改Git_blog下的_config.yml配置文件中的theme属性，设置为next。 更新主题： 12cd themes/nextgit pull 查看修改效果： 本地查看：浏览器输入 http://localhost:4000 12hexo ghexo s 在线查看： 1hexo d -g]]></content>
+    </entry>
+
+    
+  
+  
+</search>
