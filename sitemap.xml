@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2017-01-18T10:47:37.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2017-01-18T10:46:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2017-01-18T10:46:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/09/09/Hexo-%E6%90%AD%E5%BB%BA-Github-%E5%8D%9A%E5%AE%A2/</loc>
+    
+    <lastmod>2017-01-18T08:49:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/09/14/Interpro%E6%B3%A8%E9%87%8A/</loc>
+    
+    <lastmod>2016-09-14T10:33:28.000Z</lastmod>
+    
+  </url>
+  
+</urlset>
